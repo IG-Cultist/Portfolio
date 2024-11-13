@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>I.G.C's Nest</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <div class="WorkItem">
+        <article>
+            <div class = "TitleBar">
+                <div class = "Title">
+                    <p>I.G.C's Nest</p> 
+                 </div>
+ 
+                 <div class = "Options">                
+                     <a href="IGC Nest.html" ><p>ホーム</p></a>
+                 </div>
+ 
+                 <div class = "Options">                
+                     <a href="Profile.html" ><p>プロフィール</p></a>
+                 </div>
+ 
+                 <div class = "Options">                
+                     <a href="WorkItem.html" ><p> 作品一覧</p></a>
+                 </div>
+ 
+                 <div class = "ExplolerBox"><label></label><input id="Address" type="text" name=" val" size=" 1" " placeholder="検索"></div>            
+ 
+                 <div class = "EXOption">                
+                    <a href="Contact.html" ><p> お問い合わせ</p></a>
+                 </div>
+
+                 <header class="header">
+                    <!-- ハンバーガーメニュー部分 -->
+                    <div class="nav">
+                  
+                      <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                      <input id="drawer_input" class="drawer_hidden" type="checkbox">
+                  
+                      <!-- ハンバーガーアイコン -->
+                      <label for="drawer_input" class="drawer_open"><span></span></label>
+                  
+                      <!-- メニュー -->
+                      <nav class="nav_content">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="IGC Nest.html">ホーム</a></li>
+                          <li class="nav_item"><a href="Profile.html">プロフィール</a></li>
+                          <li class="nav_item"><a href="WorkItem.html">作品一覧</a></li>
+                          <li class="nav_item"><a href="Contact.html">お問い合わせ</a></li>
+                        </ul>
+                      </nav>
+                 
+                    </div>
+                  </header>
+            </div>
+        </article>        
+        <section id="WorkItem">
+           <div class="Introduction">
+                <h1>作品紹介</h1>  
+                <div class="wall" style="background-color: #555" ></div>
+                <div class="explain">
+                    <p>このページでは、これまでに私が制作した作品を展示しております</p>
+                    <p>作品のダウンロードは各説明の下に記載してあるリンクをクリックしてください</p>
+                </div>
+            </div>
+        </section>     
+
+<div id = "grandparent">
+    <div id = "parent">
+          <img src = "../images/Dog(1).png"">
+          <img src = "../images/Magnicide(1).png">
+          <img src = "../images/Waffleshooter (1).png">
+          <img src = "../images/Chill(1).png">
+          <img src = "../images/12(1).png">
+    </div>
+</div>
+
+<div id = "buttons1">
+<button onclick = "modoru()"> ◀︎ </button>
+<button onclick = "susumu()"> ▶︎ </button>
+
+    <script>
+        const parent = document.getElementById("parent");
+
+        function susumu() {
+            parent.classList.add("susumu");    
+            parent.addEventListener("animationend",susunda,{once:true});
+        }
+
+        function susunda() {  
+            parent.appendChild(parent.children[0]);   
+            parent.classList.remove("susumu");
+        }
+    
+        function modoru() { 
+            parent.classList.add("modoru");
+            parent.insertBefore(parent.children[parent.children.length-1],parent.children[0]);
+            parent.addEventListener("animationend",modotta,{once:true});
+        }
+
+       function modotta() { 
+           parent.classList.remove("modoru");
+        }
+    </script>
+</div>
+        <section id="WorkShop">
+            <article>  
+                <div>
+                    <h1>Dogs& Tarots</h1>
+                    <a href="../images/Dog(1).png" target="_blank"><img class="Games" src="../images/Dog(1).png" width="300" alt="" border="0"></a>
+                    <a href="../images/Dog(2).png" target="_blank"><img class="Games" src="../images/Dog(2).png" width="300" alt="" border="0"></a>
+                    <a href="../images/Dog(3).png" target="_blank"><img class="Games" src="../images/Dog(3).png" width="300" alt="" border="0"></a>                    <div class="explain">
+                        <p>私が初めて制作したゲーム「Dogs & Tarots」は2Dシューティングゲームとなっています</p>
+                        <p>カードゲームとシューティングゲームを合わせた新感覚な作品です</p>
+                        <a href="../games/Dogs&Tarots.zip" download>ダウンロードはこちら</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h1>12日の木曜日</h1>
+                    <a href="../images/12(1).png" target="_blank"><img class="Games" src="../images/12(1).png" width="300" alt="" border="0"></a>             
+                    <a href="../images/12(2).png" target="_blank"><img class="Games" src="../images/12(2).png" width="300" alt="" border="0"></a>             
+                    <a href="../images/12(3).png" target="_blank"><img class="Games" src="../images/12(3).png" width="300" alt="" border="0"></a>             
+                    <div class="explain">
+                        <p>学校内のイベントの「ハッカソン」で4人チームで制作した「12日の木曜日」はワンボタンで遊べるカジュアルな一作です</p>
+                        <p>当イベントは、10時間で作品一つを仕上げるというイベントとなっております。初参加ということもあり、大変苦労した一作です</p>
+                        <a href="../games/ThursdayThe12th.zip" download>ダウンロードはこちら</a>
+                    </div>
+                </div>
+                <div> 
+                    <h1>Magnicide</h1>              
+                    <a href="../images/Magnicide(1).png" target="_blank"><img class="Games" src="../images/Magnicide(1).png" width="300" alt="" border="0"></a>      
+                    <a href="../images/Magnicide(2).png" target="_blank"><img class="Games" src="../images/Magnicide(2).png" width="300" alt="" border="0"></a>             
+                    <a href="../images/Magnicide(3).png" target="_blank"><img class="Games" src="../images/Magnicide(3).png" width="300" alt="" border="0"></a>                    
+                    <div class="explain">
+                        <p>初めてUnityで制作した「Magnicide」は、磁力を扱う2Dアクションゲームです</p>
+                        <p>なじみ深い2Dアクションに、磁力の仕組みを取り付けた一作です。</p>
+                        <a href="../games/Magnicide.zip" download>ダウンロードはこちら</a>
+                    </div>
+                </div>
+                <div>
+                    <h1>Chill Gardian</h1>
+                    <a href="../images/Chill(1).png" target="_blank"><img class="Games" src="../images/Chill(1).png" width="300" alt="" border="0"></a>      
+                    <a href="../images/Chill(2).png" target="_blank"><img class="Games" src="../images/Chill(2).png" width="300" alt="" border="0"></a>      
+                    <a href="../images/Chill(3).png" target="_blank"><img class="Games" src="../images/Chill(3).png" width="300" alt="" border="0"></a>                 
+                    <div class="explain">
+                        <p>2回目の学校内イベント「ハッカソン」で制作した「Chill Gardian」はシン・雪合戦をテーマにした一作です</p>
+                        <p>シン・雪合戦という前代未聞のテーマにより生み出された今作は、スノーランチャーでモンスターを撃破するゲームです</p>
+                        <a href="../games/ChillGardian.zip" download>ダウンロードはこちら</a>
+                    </div>
+                </div>
+                <div>
+                    <h1>Waffle Shooter</h1>
+                    <a href="../images/Waffleshooter(2).png" target="_blank"><img class="Games" src="../images/Waffleshooter(2).png" width="300" alt="" border="0"></a>      
+                    <a href="../images/Waffleshooter(3).png" target="_blank"><img class="Games" src="../images/Waffleshooter(3).png" width="300" alt="" border="0"></a>      
+                    <div class="explain">
+                        <p>個人的に気に入っている「Waffle Shooter」はUnityで制作されたカジュアルなシューティングゲームです</p>
+                        <p>驚異的な硬さのワッフルを発射する「Wafffle Shooter」は家具を破壊してポイントを稼ぐゲームです</p>
+                        <a href="../games/WaffleShooter.zip" download>ダウンロードはこちら</a>
+                    </div>
+                </div>
+            </article>
+        </section>     
+    </div>
+</body>
+</html>

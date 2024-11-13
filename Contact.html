@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>I.G.C's Nest</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <div class="Nest">
+        <article>
+            <div class = "TitleBar">
+                <div class = "Title">
+                    <p>I.G.C's Nest</p> 
+                 </div>
+ 
+                 <div class = "Options">                
+                     <a href="IGC Nest.html" ><p>ホーム</p></a>
+                 </div>
+ 
+                 <div class = "Options">                
+                     <a href="Profile.html" ><p>プロフィール</p></a>
+                 </div>
+ 
+                 <div class = "Options">                
+                     <a href="WorkItem.html" ><p> 作品一覧</p></a>
+                 </div>
+ 
+                 <div class = "ExplolerBox"><label></label><input id="Address" type="text" name=" val" size=" 1" " placeholder="検索"></div>                
+ 
+                 <div class = "EXOption">                
+                    <a href="Contact.html" ><p> お問い合わせ</p></a>
+                 </div>
+
+                 <header class="header">
+                    <!-- ハンバーガーメニュー部分 -->
+                    <div class="nav">
+                  
+                      <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                      <input id="drawer_input" class="drawer_hidden" type="checkbox">
+                  
+                      <!-- ハンバーガーアイコン -->
+                      <label for="drawer_input" class="drawer_open"><span></span></label>
+                  
+                      <!-- メニュー -->
+                      <nav class="nav_content">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="IGC Nest.html">ホーム</a></li>
+                          <li class="nav_item"><a href="Profile.html">プロフィール</a></li>
+                          <li class="nav_item"><a href="WorkItem.html">作品一覧</a></li>
+                          <li class="nav_item"><a href="Contact.html">お問い合わせ</a></li>
+                        </ul>
+                      </nav>
+                 
+                    </div>
+                  </header>
+            </div>
+        </article>        
+        <section id="Contact">   
+                <div class=" workSheet">
+                    <h1 style=" font-size:40px;margin: 5px">お問い合わせフォーム</h1>
+                    <p>問い合わせしたい点がございましたらお気軽にご入力ください</p>
+                    <p>注:ページを離れると入力内容が消去されます</p>
+                    <dev class="Name">
+                        <h3><label>1,名前(ニックネーム可)<span class="required">[必須項目]</span></label><input id="Name" type="text" name=" val" size=" 1"></h3>
+                    </dev>
+            
+                    <dev class="Address">
+                        <h3><label>2,メールアドレス<span class="required">[必須項目]</span></label><input id="Address" type="text" name=" val" size=" 1"></h3>
+                    </dev>
+                        <h3><label for="Age">3,年齢</label></h3>
+                        <ul style="list-style:none;">
+                            <li><input type="radio" name="chk" value="5">3~10歳</li>
+                            <li><input type="radio" name="chk" value="4">11~18歳</li>
+                            <li><input type="radio" name="chk" value="3">19~30歳</li>
+                            <li><input type="radio" name="chk" value="2">31~50歳</li>
+                            <li><input type="radio" name="chk" value="1">51歳~</li>
+                        </ul>
+                    </dev>
+            
+                    <dev class="Subject">
+                        <h3><label>4,件名</label><input id="Subject" type="text" name=" val" size=" 1"></h3>
+                    </dev>
+            
+                    <dev class="Text">
+                        <h3><label>5,本文</label><textarea id="Text" type="text" name=" val" size=" 1"></textarea></h3>
+                    </dev>
+                    <p><input type="submit" value="送信"></p>
+                </div>
+        </section>
+    </div>
+</body>
+</html>
