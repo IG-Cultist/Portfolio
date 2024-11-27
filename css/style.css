@@ -15,9 +15,7 @@ body {
     display: flex;
 }
 
-.WorkItem{
-border: 10px groove #555555;
-}
+
 
 #WorkItem .Introduction {
     width: auto;
