@@ -30,9 +30,9 @@ body {
     background-color: #dbdbdb;
     border: 2px solid #363636;
     text-align: center;  
-    font-size: 2.3em;
+    font-size: 3.3em;
     color:#FFF;  
-    padding:0.2em;
+    padding:0.0em;
 }
 
 .Options {    
@@ -44,12 +44,6 @@ body {
     font-size: 1.3em;
     color:#FFF;  
     margin: 10px; 
-}
-
-.ExplolerBox {    
-    width: 538px;
-    margin-top: 1em;
-    justify-content: space-around;
 }
 
 .EXOption {    
